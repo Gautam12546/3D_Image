@@ -1,0 +1,62 @@
+# Create/overwrite .gitignore with proper content
+@"
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Environment variables (VERY IMPORTANT - NEVER COMMIT)
+.env
+.env.*
+*.env
+
+# Temporary files
+temp/
+tmp/
+
+# Uploaded files (user data - don't push)
+uploads/
+
+# Output files (generated results - don't push)
+outputs/
+
+# Test outputs
+backend/python/test_output/
+test_output/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Build files
+dist/
+build/
+
+# Large generated files
+*.ply
+model_data.json
+depth_map.png
+point_cloud.ply
+mesh.ply
+
+# Misc
+*.swp
+*.swo
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
