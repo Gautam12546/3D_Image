@@ -8,6 +8,8 @@ import HowItWorks from '../components/home/HowItWorks';
 import Testimonials from '../components/home/Testimonials';
 import { FiArrowRight } from 'react-icons/fi';
 
+
+
 const HomePage = () => {
   const { isAuthenticated } = useAuth();
 
